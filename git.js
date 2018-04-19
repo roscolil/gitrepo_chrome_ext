@@ -1,5 +1,6 @@
-chrome.browserAction.onClicked.addListener(function() {
-    chrome.tabs.create({url: 'index.html'});
+chrome.browserAction.onClicked.addListener(function(activeTab) {
+    var newUrl = "http://github.com/";
+    chrome.tabs.create({url: newUrl});
   });
 
 
