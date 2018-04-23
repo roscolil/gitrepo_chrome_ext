@@ -9,12 +9,10 @@
    "default_icon": "icon.png",
    "default_popup": "index.html"
   },
+
   "background": {
-      "scripts": [
-        "git.js"
-      ]
+      "scripts": ["git.js"]
     },
-  "permissions": [
-   "tabs"
-   ]
+    
+  "permissions": ["tabs"]
 }
