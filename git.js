@@ -10,8 +10,10 @@
 //   chrome.tabs.create({url: newUrl});
 // });
 
+let inputValue = document.getElementById("ghusername").value;
+
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('button').addEventListener('click', function() {
-    chrome.tabs.create({url: 'http://github.com/'});
+    chrome.tabs.create({url: 'http://github.com/' + inputValue});
   });
 });
